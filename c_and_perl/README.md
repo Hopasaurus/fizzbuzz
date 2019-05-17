@@ -23,6 +23,10 @@ bash-3.2$ time gcc -o fizzbuzz fizzbuzz.c && ./fizzbuzz > c_ouput.txt
 real    0m0.074s
 user    0m0.044s
 sys     0m0.024s
+
+
+
+
 bash-3.2$ time perl fizzbuzz.pl > pl_output.txt
 
 real    0m0.022s
