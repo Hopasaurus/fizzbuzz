@@ -32,7 +32,12 @@ bash-3.2$ time perl fizzbuzz.pl > pl_output.txt
 real    0m0.022s
 user    0m0.013s
 sys     0m0.006s
+
+
+
 bash-3.2$ diff c_ouput.txt pl_output.txt
 bash-3.2$
+
+(no output as there are no differences)
 ```
 
