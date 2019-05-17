@@ -17,6 +17,7 @@ Run the C version:
 
 And a final note, Perl is faster than C... proof:
 
+```
 bash-3.2$ time gcc -o fizzbuzz fizzbuzz.c && ./fizzbuzz > c_ouput.txt
 
 real    0m0.074s
@@ -29,4 +30,5 @@ user    0m0.013s
 sys     0m0.006s
 bash-3.2$ diff c_ouput.txt pl_output.txt
 bash-3.2$
+```
 
