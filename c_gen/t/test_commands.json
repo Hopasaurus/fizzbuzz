@@ -1,0 +1,13 @@
+[
+    {
+        "language": "c",
+        "build": "gcc -o fb_c fb.c",
+        "run": "./fb_c | cmp t/FizzBuzz_golden.txt -",
+        "cleanup": "rm fb_c; rm fb.c"
+    },
+    {
+        "language": "perl",
+        "run": "perl fb.perl | cmp t/FizzBuzz_golden.txt -",
+        "cleanup": "rm fb.perl"
+    }
+]
