@@ -13,5 +13,7 @@ This was fiddling around with a very basic header only test "framework" this may
 c_gen:
 This is a FizzBuzz generator, it includes a start of a test framework that compiles and runs the generator and also outputs TAP output. It would be fairly easy to spin up a CI server that could trigger off git commits and run these tests. Possibly the subject of some near future play time.
 
+To run the tests, go into the c_gen directory and run `prove` this assumes you have all the perly things you need.
+
 
 For more about TAP: https://testanything.org/

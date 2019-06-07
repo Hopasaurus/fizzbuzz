@@ -1,2 +1,2 @@
-gcc -o genFizzBuzz genFizzBuzz.c && ./genFizzBuzz c
+gcc -o genFizzBuzz genFizzBuzz.c && ./genFizzBuzz c && rm genFizzBuzz
 

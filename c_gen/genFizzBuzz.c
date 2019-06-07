@@ -25,6 +25,9 @@ int main(int argc, char** argv) {
         
         char destination[100];
         for(int n=1; n <= 100; ++n) {
+            // right now we cheat pretty hard, we don't put the business logic of fizz buzz in the generated code
+            // most of the initial point is to get a test framework up and running establishing an interface
+            // later we can use the L in SOLID and re-implement this in a different way and still end up with a test around this.
             printf("\tprintf(\"");
             fizzBuzz(n, destination);
 
