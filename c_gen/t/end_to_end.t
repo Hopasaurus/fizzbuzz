@@ -29,3 +29,4 @@ for my $item (@{$commands}) {
     print "$r - $item->{language} produces valid output\n";
 }
 
+`rm genFizzBuzz`;

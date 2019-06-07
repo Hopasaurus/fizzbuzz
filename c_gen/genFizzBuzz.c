@@ -45,12 +45,18 @@ int main(int argc, char** argv) {
         
         char destination[100];
         for(int n=1; n <= 100; ++n) {
-            printf("\tprint \"");
             fizzBuzz(n, destination);
+            printf("\tprint \"%s\\n\";\n", destination);
+        }
+        // footer
+        printf("\n");
+    }
 
-            printf("%s", destination);
-            printf("\\n\";\n");
-
+    if (!strcmp("basic", argv[1])) {
+        char destination[100];
+        for(int n=1; n <= 100; ++n) {
+            fizzBuzz(n, destination);
+            printf("%d print \"%s\"\n", n * 10, destination);
         }
         // footer
         printf("\n");
