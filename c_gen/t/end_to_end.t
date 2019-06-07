@@ -19,8 +19,9 @@ print "1..$commandCount\n";
 for my $item (@{$commands}) {
     `./genFizzBuzz $item->{language} > fb.$item->{language}`;
     `$item->{build}` if defined $item->{build};
-    `$item->{run}`;
+    `$item->{run} | cmp t/FizzBuzz_golden.txt -`;
     my $returnCode = $?;
+    `rm fb.$item->{language}`;
     `$item->{cleanup}` if defined $item->{cleanup};
     my $r = $returnCode == 0 ? "ok" : "not ok";
 
