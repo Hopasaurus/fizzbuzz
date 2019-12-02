@@ -7,7 +7,7 @@ Have fun!
 
 Run the Perl version:
 
-`perl fizzbuzz.c`
+`perl fizzbuzz.pl`
 
 Run the C version:
 
